@@ -34,6 +34,7 @@ tabsParent.onclick = (event) => {
       if (event.target === tab) {
         hideTabContent();
         showTabContent(tabIndex);
+        
       }
     });
   }

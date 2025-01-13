@@ -7,11 +7,16 @@ const openModal = () => {
     document.body.style.overflow = 'hidden'
     window.removeEventListener("scroll", scrollEnd);
 
+
+    
+
 }
 function scrollEnd() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         openModal();
     }
+
+
 }
 setTimeout(openModal, 10000);
 window.addEventListener("scroll", scrollEnd);
